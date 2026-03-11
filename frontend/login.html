@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | User Record Management System</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="card auth-card">
+            <div class="card-header">
+                <span class="eyebrow">User Record Management System</span>
+                <h1>Login</h1>
+                <p class="subtext">Access your account to manage your record securely.</p>
+            </div>
+
+            <form id="login-form" class="form-stack">
+                <label class="field">
+                    <span>Email</span>
+                    <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
+
+                <label class="field">
+                    <span>Password</span>
+                    <input type="password" name="password" placeholder="Enter your password" required>
+                </label>
+
+                <button type="submit" class="button button-primary button-block">Login</button>
+            </form>
+
+            <div id="login-message" class="status-message" aria-live="polite"></div>
+
+            <div class="footer-link-row">
+                <span class="muted">Need an account?</span>
+                <a href="./register.html">Create account</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>

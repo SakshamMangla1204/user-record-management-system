@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | User Record Management System</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="card auth-card auth-card-wide">
+            <div class="card-header">
+                <span class="eyebrow">Registration</span>
+                <h1>Create account request</h1>
+                <p class="subtext">Submit your details to receive an OTP for account verification.</p>
+            </div>
+
+            <form id="register-form" class="form-stack">
+                <div class="field-grid">
+                    <label class="field">
+                        <span>Name</span>
+                        <input id="name" type="text" name="name" placeholder="Enter full name" required>
+                    </label>
+
+                    <label class="field">
+                        <span>Email</span>
+                        <input id="email" type="email" name="email" placeholder="you@example.com" required>
+                    </label>
+                </div>
+
+                <div class="field-grid">
+                    <label class="field">
+                        <span>Phone</span>
+                        <input id="phone" type="text" name="phone" placeholder="Phone number" required>
+                    </label>
+
+                    <label class="field">
+                        <span>Department</span>
+                        <input id="department" type="text" name="department" placeholder="Department" required>
+                    </label>
+                </div>
+
+                <label class="field">
+                    <span>Address</span>
+                    <textarea id="address" name="address" rows="3" placeholder="Enter address" required></textarea>
+                </label>
+
+                <button type="submit" class="button button-primary button-block">Request OTP</button>
+            </form>
+
+            <div id="register-message" class="status-message" aria-live="polite"></div>
+
+            <div class="footer-link-row">
+                <span class="muted">Already have credentials?</span>
+                <a href="./login.html">Back to login</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify OTP | User Record Management System</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="card auth-card">
+            <div class="card-header">
+                <span class="eyebrow">OTP Verification</span>
+                <h1>Verify your account</h1>
+                <p class="subtext">Enter the email and OTP sent to complete registration.</p>
+            </div>
+
+            <form id="verify-form" class="form-stack">
+                <label class="field">
+                    <span>Email</span>
+                    <input id="verify-email" type="email" name="email" placeholder="you@example.com" required>
+                </label>
+
+                <label class="field">
+                    <span>OTP Code</span>
+                    <input id="otp_code" type="text" name="otp_code" placeholder="Enter OTP code" required>
+                </label>
+
+                <button type="submit" class="button button-primary button-block">Verify</button>
+            </form>
+
+            <div id="verify-message" class="status-message" aria-live="polite"></div>
+
+            <div class="footer-link-row">
+                <span class="muted">Need to request OTP again?</span>
+                <a href="./register.html">Return to registration</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
